@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片 - 国产高清影视</title>
+  <meta name="description" content="国产高清影视站内搜索页面，支持按片名、地区、年份、类型、标签和简介进行静态前端检索。">
+  <meta name="keywords" content="国产高清影视在线观看站 - 免费最新电影电视剧点播-内地综艺在线,国产,视频,免费,在线观看,高清,影视大全,影片搜索,电影搜索,电视剧搜索,影视检索">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="搜索影片 - 国产高清影视">
+  <meta property="og:description" content="国产高清影视站内搜索页面，支持按片名、地区、年份、类型、标签和简介进行静态前端检索。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html" aria-label="国产高清影视首页">
+        <span class="logo-mark">影</span>
+        <span class="logo-text">国产高清影视</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类浏览</a>
+          <a href="category/hot-movies.html">热播电影</a>
+          <a href="category/tv-drama.html">电视剧集</a>
+          <a href="category/domestic-classics.html">国产影视</a>
+          <a href="category/hongkong-taiwan.html">港台精选</a>
+        <a href="rankings.html">热播榜</a>
+        <a href="archive.html">片库索引</a>
+      </nav>
+      <form class="header-search" action="search.html" method="get">
+        <label class="sr-only" for="header-search-input-root">搜索影片</label>
+        <input id="header-search-input-root" type="search" name="q" placeholder="搜索片名 / 地区 / 类型">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">菜单</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="移动端导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类浏览</a>
+      <a href="rankings.html">热播榜</a>
+      <a href="archive.html">片库索引</a>
+      <a href="search.html">搜索</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container">
+        <span class="eyebrow">搜索 / 筛选</span>
+        <h1>搜索全站影片</h1>
+        <p>国产高清影视站内搜索页面，支持按片名、地区、年份、类型、标签和简介进行静态前端检索。</p>
+        <form class="big-search page-search-form" action="search.html" method="get" data-search-page-form>
+          <label class="sr-only" for="search-page-input">搜索影片</label>
+          <input id="search-page-input" type="search" name="q" placeholder="输入片名、地区、类型、年份、标签">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="filter-panel search-filter-panel">
+          <label>
+            <span>年份</span>
+            <select data-search-year>
+              <option value="">全部年份</option>
+              <option value="2020">2020年及以后</option>
+              <option value="2010">2010年及以后</option>
+              <option value="2000">2000年及以后</option>
+              <option value="1990">1990年及以后</option>
+            </select>
+          </label>
+          <label>
+            <span>类型</span>
+            <select data-search-type>
+              <option value="">全部类型</option>
+              <option value="电影">电影</option>
+              <option value="剧">剧集 / 电视剧</option>
+              <option value="综艺">综艺</option>
+              <option value="动画">动画 / 动漫</option>
+              <option value="纪录">纪录片</option>
+            </select>
+          </label>
+          <p class="filter-count"><span data-search-count>0</span> 条搜索结果</p>
+        </div>
+        <div class="movie-grid" data-search-results></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="site-logo footer-logo" href="index.html">
+          <span class="logo-mark">影</span>
+          <span class="logo-text">国产高清影视</span>
+        </a>
+        <p>国产高清影视在线观看站，支持免费点播最新电影和电视剧。片库资源庞大，涵盖多种类型国产作品，致力于打造优质观影平台。</p>
+        <p class="footer-note">仅供个人学习研究使用</p>
+      </div>
+      <div>
+        <h3>分类浏览</h3>
+        <div class="footer-links">
+          <a href="category/hot-movies.html">热播电影</a>
+          <a href="category/tv-drama.html">电视剧集</a>
+          <a href="category/domestic-classics.html">国产影视</a>
+          <a href="category/hongkong-taiwan.html">港台精选</a>
+          <a href="category/asia-theater.html">亚洲剧场</a>
+          <a href="category/western-films.html">欧美专区</a>
+          <a href="category/costume-romance.html">古装爱情</a>
+          <a href="category/suspense-thriller.html">悬疑惊悚</a>
+          <a href="category/comedy-family.html">喜剧家庭</a>
+          <a href="category/animation-documentary.html">动漫纪录</a>
+        </div>
+      </div>
+      <div>
+        <h3>站内入口</h3>
+        <div class="footer-links">
+          <a href="rankings.html">热播榜</a>
+          <a href="archive.html">完整片库</a>
+          <a href="search.html">影片搜索</a>
+          <a href="sitemap.xml">站点地图</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script src="assets/search-index.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
